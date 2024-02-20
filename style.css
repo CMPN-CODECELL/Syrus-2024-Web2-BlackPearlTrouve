@@ -76,6 +76,9 @@ footer{
     background: black;
     color: white;
     padding: 9px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Utility Classes */
@@ -94,7 +97,7 @@ footer{
 .btn{
     padding: 6px 20px;
     border: 2px solid white;
-    background-color: brown;
+    background-color: #163126;
     color: white;
     margin: 17px;
     font-size: 1.5rem;
@@ -108,10 +111,10 @@ footer{
 
 #home{
     text-align: center  ;
-    background-image: url("homebg.jpeg") ;
+    /* background-image: url("homebg.jpeg") ;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     text-decoration-color: aliceblue;
 }
 
@@ -119,3 +122,12 @@ footer{
     text-align: center;
 }
 
+body{
+    background-image: url("homebg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #001D00;
+    margin: auto;
+}
