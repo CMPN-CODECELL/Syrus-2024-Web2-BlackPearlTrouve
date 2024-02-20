@@ -108,6 +108,11 @@ footer{
 
 #home{
     text-align: center  ;
+    background-image: url("homebg.jpeg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration-color: aliceblue;
 }
 
 #contact{
