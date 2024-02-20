@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  nav h1 {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #4cae4c;
+  }
+  
+  .content {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  input[type="number"], select {
+    width: calc(100% - 110px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4cae4c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a745;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
