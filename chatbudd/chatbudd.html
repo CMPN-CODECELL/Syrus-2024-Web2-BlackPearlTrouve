@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-    <link rel="stylesheet" href="chatbudd.css">
-</head>
+  <head>
+    <title>Create Your Own Chatbot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="chatbudd.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+  </head>
+  <body>
 <body>
-    <div class="chatbot-container">
-        <div id="header">
-            <h1>Chatbot</h1>
-        </div>
-        <div id="chatbot">
-            <div id="conversation">
-              <div class="chatbot-message">
-                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
-              </div>
-            </div>
-            <form id="input-form">
-              <message-container>
-                <input id="input-field" type="text" placeholder="Type your message here">
-                <button id="submit-button" type="submit">
-                  <img class="send-icon" src="send-message.png" alt="">
-                </button>
-              </message-container>
-                
-            </form>
-        </div>  
-
+  <div>
+    <nav id="navbar">
+      <div id="logo">
+          <img src="C:\Users\272241\Desktop\Syrus\BalanceBudd\Syrus-2024-Web2-BlackPearlTrouve\LOGOS.png" alt="balancebudd.com">
+      </div>
+      <div>
+      <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="#yogo-container">Yoga</a></li>
+          <li class="item"><a href="chatbudd/chatbudd.html">Chatbudd</a></li>
+          <li class="item"><a href="#journaling-section">Journaling</a></li>
+          <li class="item"><a href="game.html">Games</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+          <li class="item"><a href="login.html">Login</a></li>
+          <li class="item"><a href="signup.html">Sign-Up</a></li>
+      </ul>
+      </div>
+  </nav>
+  </div>
+  <div class="card">
+    <div id="header">
+      <h1>ChatBudd!</h1>
     </div>
-
-    <script src="chatbudd.js"></script>
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+    </div>
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+      <button class="send" onclick="sendMessage()">
+        <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+      </button>
+    </div>
+  </div>
+  <script src="chatbudd.js"></script>
 </body>
 </html>

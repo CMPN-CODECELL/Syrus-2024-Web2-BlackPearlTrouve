@@ -1,152 +1,192 @@
-body {
-    display: flex;
-    justify-content: center;
+/* CSS Variables */
+:root{
+  --navbar-height: 59px;
 }
 
-.chatbot-container {
-    width: 500px;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- }
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  /* box-shadow: 0px 2.9825px 7.4564px rgba(0,0,0,0.1); */
+  box-shadow: h-offset v-offset blur spread color;
+}
 
-#chatbot {
-    background-color: #f5f5f5;
-    border: 1px solid #eef1f5;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-  }
-  
-  #header {
-    background-color: darkslategrey;
-    color: #ffffff;
-    padding: 20px;
-    font-size: 1em;
-    font-weight: bold;
-  }
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.7;
+}
 
-  message-container {
-    background: #ffffff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  #conversation {
-    height: 500px;
-    overflow-y: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 10px 34px;
+}
 
-  @keyframes message-fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .chatbot-message {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    font-size: 16px;
-    line-height: 20px;
-    border-radius: 20px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    max-width: 100%;
-    padding: 0 15px;
-  }
-
-  .user-message {
-    justify-content: flex-end;
-  }
+#logo img{
+  height: 59px;
+  margin: 3px 6px;
+}
 
 
-.chatbot-text {
-    background-color: white;
-    color: #333333;
-    font-size: 1.1em;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #input-form {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #eef1f5;
-  }
-  
-  #input-field {
-    flex: 1;
-    height: 60px;
-    border: 1px solid #eef1f5;
-    border-radius: 4px;
-    padding: 0 10px;
-    font-size: 14px;
-    transition: border-color 0.3s;
-    background: #ffffff;
-    color: #333333;
-    border: none;
-  }
+/* Navigation Bar: List Styling */
 
-  .send-icon {
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  #input-field:focus {
-    border-color: #333333;
-    outline: none;
-  }
-  
-  #submit-button {
-    background-color: transparent;
-    border: none;
-  }
+#navbar ul{
+  display: flex;
+  font-family: 'Baloo Bhai', cursive;
+}
 
-  p[sentTime]:hover::after {    
-    content: attr(sentTime);
-    position: absolute;
-    top: -3px;
-    font-size: 14px;
-    color: gray;
-  }
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+}
 
-  .chatbot p[sentTime]:hover::after {  
-    left: 15px;
-  }
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
 
-  .user-message p[sentTime]:hover::after {  
-    right: 15px;
-  }
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
 
-  /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+
+/* new wala */
+* {
+  font-size: 1.3vw;
+  font-family: "Epilogue", sans-serif;
+}
+
+html {
+  --scrollbarBG: #fff;
+  --thumbBG: #90a4ae;
+}
+
+body {
+  background: #ccc;
+}
+body .card {
+  height: 45vw;
+  width: 35vw;
+  background-color: white;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  box-shadow: 2vw 2vw 12vw 3vw #ccc;
+}
+body .card #header {
+  height: 5vw;
+  background: #448b82;
+  padding: 0vw;
+}
+body .card #header h1 {
+  color: #fff;
+  font-size: 2vw;
+  font-family: "Finger Paint", cursive;
+  padding: 1vw;
+}
+body .card #message-section::-webkit-scrollbar {
+  width: 10px;
+}
+body .card #message-section {
+  height: 32vw;
+  padding: 0 2.5vw;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body .card #message-section::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body .card #message-section::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+body .card #message-section #bot,
+body .card #message-section #user {
+  position: relative;
+  bottom: 0;
+  min-height: 1.5vw;
+  border: 0.15vw solid #777;
+  background-color: #fff;
+  border-radius: 0px 1.5vw 1.5vw 1.8vw;
+  padding: 1vw;
+  margin: 1.5vw 0;
+}
+body .card #message-section #user {
+  border: 1.5px solid #023d7c;
+  border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+  background-color: #034339;
+  float: right;
+}
+body .card #message-section #user #user-response {
+  color: #fff;
+}
+body .card #message-section .message {
+  color: #163126;
+  clear: both;
+  line-height: 1.2vw;
+  font-size: 1.2vw;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 85%;
+  word-wrap: break-word;
+  z-index: 2;
+}
+body .card #input-section {
+  z-index: 1;
+  padding: 0 2.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 6vw;
+  width: 100%;
+}
+body .card #input-section input {
+  color: #163126;
+  min-width: 0.5vw;
+  outline: none;
+  height: 5vw;
+  width: 26vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #000 0.1vw;
+}
+body .card .send {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 1.4vw;
+  margin-right: 0vw;
+  padding: 0;
+  position: relative;
+  outline: none;
+}
+body .card .send .circle {
+  position: relative;
+  width: 4.8vw;
+  height: 4.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .card .send .circle i {
+  font-size: 3vw;
+  margin-left: -1vw;
+  margin-top: 1vw;
+}
