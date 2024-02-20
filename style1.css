@@ -4,6 +4,70 @@
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 } */
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* box-shadow: 0px 2.9825px 7.4564px rgba(0,0,0,0.1); */
+    box-shadow: h-offset v-offset blur spread color;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
