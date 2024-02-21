@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streak Message App</title>
+    <link rel="stylesheet" href="display.css" />
+  </head>
+  <body>
+    <div>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="LOGOS.png" alt="balancebudd.com">
+            </div>
+            <div>
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="./fitness/fitness.html">Fitness</a></li>
+                <li class="item"><a href="chatbudd/chatbudd.html">Chatbudd</a></li>
+                <li class="item"><a href="#journaling-section">Journaling</a></li>
+                <li class="item"><a href="../Syrus-2024-Web2-BlackPearlTrouve/game/game.html">Games</a></li>
+                <li class="item"><a href="appoint.html">Appointments</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+                <li class="item"><a href="login.html">Login</a></li>
+                <li class="item"><a href="signup.html">Sign-Up</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+      <h1>Write Down</h1>
+      <label for="weeks">Select weeks of streak: </label>
+      <select id="weeks">
+        <option value="1">1 week</option>
+        <option value="2">2 weeks</option>
+        <option value="3">3 weeks</option>
+        <option value="4">4 weeks</option>
+        <option value="5">5 weeks</option>
+        <option value="6">6 weeks</option>
+      </select>
+      <textarea id="message" placeholder="Write your message..."></textarea>
+      <button onclick="saveMessage()">Save</button>
+      <button onclick="displayMessage()">Display</button>
+    </div>
+    <script src="display.js"></script>
+  </body>
+</html>
