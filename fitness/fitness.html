@@ -1,221 +1,45 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personalized Fitness Plans</title>
-  <link rel="stylesheet" href="stylef.css">
-</head>
-<body>
-  <nav>
-    <div class="container">
-      <h1>Personalized Fitness Plans</h1>
-    </div>
-  </nav> 
-  
-  <div class="container">
-   
-    <div class="content">
-      <div class="input-group">
-        <label for="age">Age:</label>
-        <input type="number" id="age">
-      </div>
-      <div class="input-group">
-        <label for="gender">Gender:</label>
-        <select id="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </div>
-      <div class="input-group">
-        <label for="goal">Fitness Goal:</label>
-        <select id="goal">
-          <option value="lose">Lose Weight</option>
-          <option value="maintain">Maintain Weight</option>
-          <option value="gain">Gain Muscle</option>
-        </select>
-      </div>
-      <button onclick="generatePlan()">Generate Plan</button>
-      <div id="plan" class="result"></div>
-    </div>
-  </div>
-
-  <script src="fitness.js"></script>
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalized Fitness Plans</title>
-    <link rel="stylesheet" href="style1.css" />
-  </head>
-  <body>
-    <div>
-      <div class="fitness-container">
-        <nav id="navbar">
-        <div id="logo">
-          <img src="./assets/LOGOS.png" alt="balancebudd.com" />
-        </div>
-        <div>
-          <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="./fitness.html">Fitness</a></li>
-            <li class="item"><a href="#chatbudd">Chatbudd</a></li>
-            <li class="item"><a href="#journaling-section">Journaling</a></li>
-            <li class="item"><a href="#games">Games</a></li>
-            <li class="item"><a href="#contact">Contact</a></li>
-            <div class="login-signup">
-              <li class="item"><a href="./login.html">Login</a></li>
-              <li class="item"><a href="./signup.html">Signup</a></li>
-            </div>
-          </ul>
-        </div>
-      </nav> 
-        <h1 class="fitness-h1">Personalized Fitness Plans</h1>
-        <div class="input-group">
-          <label for="age">Age:</label>
-          <input type="number" id="age" />
-        </div>
-        <div class="input-group">
-          <label for="gender">Gender:</label>
-          <select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="goal">Fitness Goal:</label>
-          <select id="goal">
-            <option value="lose">Lose Weight</option>
-            <option value="maintain">Maintain Weight</option>
-            <option value="gain">Gain Muscle</option>
-          </select>
-        </div>
-        <button class="fitness-button" onclick="generatePlan()">
-          Generate Plan
-        </button>
-        <div id="plan" class="result"></div>
-      </div>
-    </div>
-    <script src="./fitness.js"></script>
-   Code injected by live-server -->
-  <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body>
-</html> 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personalized Fitness Plans</title>
-    <link rel="stylesheet" href="style1.css" />
+    <title>BalanceBudd Fitness</title>
+    <link rel="stylesheet" href="stylef.css" />
   </head>
   <body>
-    <!-- <div>
-      <link
-        <nav id="navbar">
-        <div id="logo">
-          <img src="./assets/LOGOS.png" alt="balancebudd.com" />
-        </div>
-        <div>
-          <ul>
-            <li class="item"><a href="./index.html">Home</a></li>
-            <li class="item"><a href="./fitness.html">Fitness</a></li>
-            <li class="item"><a href="#chatbudd">Chatbudd</a></li>
-            <li class="item"><a href="#journaling-section">Journaling</a></li>
-            <li class="item"><a href="#games">Games</a></li>
-            <li class="item"><a href="#contact">Contact</a></li>
-            <div class="login-signup">
-              <li class="item"><a href="./login.html">Login</a></li>
-              <li class="item"><a href="./signup.html">Signup</a></li>
-            </div>
-          </ul>
-        </div>
-      
-    </nav>
-    </div> -->
-
-    <!-- <nav id="navbar">
-        <div id="logo">
-            <img src="LOGOS.png" alt="balancebudd.com">
-        </div>
-        <div>
-        <ul>
-            <li class="item"><a href="index.html">Home</a></li>
-            <li class="item"><a href="#yogo-container">Yoga</a></li>
-            <li class="item"><a href="#chatbudd">Chatbudd</a></li>
-            <li class="item"><a href="#journaling-section">Journaling</a></li>
-            <li class="item"><a href="game.html">Games</a></li>
-            <li class="item"><a href="#contact">Contact</a></li>
-            <li class="item"><a href="login.html">Login</a></li>
-            <li class="item"><a href="signup.html">Sign-Up</a></li>
-        </ul>
-        </div>
-    </nav> -->
-    <div class="container">
-      <div class="content">
-        <div class="input-group">
-          <label for="age">Age:</label>
-          <input type="number" id="age" />
-        </div>
-        <div class="input-group">
-          <label for="gender">Gender:</label>
-          <select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="goal">Fitness Goal:</label>
-          <select id="goal">
-            <option value="lose">Lose Weight</option>
-            <option value="maintain">Maintain Weight</option>
-            <option value="gain">Gain Muscle</option>
-          </select>
-        </div>
-        <button onclick="generatePlan()">Generate Plan</button>
-        <div id="plan" class="result"></div>
+    <!-- Navbar -->
+    <div>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="../LOGOS.png" alt="balancebudd.com" />
       </div>
+      <div>
+        <ul>
+          <li class="item"><a href="../index.html">Home</a></li>
+          <li class="item"><a href="fitness.html">Fitness</a></li>
+          <li class="item"><a href="../chatbudd/chatbudd.html">Chatbudd</a></li>
+          <li class="item"><a href="#journaling-section">Journaling</a></li>
+          <li class="item"><a href="../game/game.html">Games</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+          <div class="login-signup">
+            <li class="item"><a href="./login.html">Login</a></li>
+            <li class="item"><a href="./signup.html">Signup</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+    <!-- Personalized Fitness Recommendations Form -->
+    <div class="container">
+      <h1>Personalized Fitness Recommendations</h1>
+      <label for="ageInput">Enter your age:</label>
+      <input type="number" id="ageInput" placeholder="Age" />
+      <button onclick="getRecommendations()">Get Recommendations</button>
+      <p id="recommendations"></p>
     </div>
 
+    <!-- JavaScript for personalized fitness recommendations -->
     <script src="fitness.js"></script>
-  <!-- Code injected
+  </body>
+</html>
