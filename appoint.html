@@ -5,6 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Appointment</title>
     <style>
+
+        
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* box-shadow: 0px 2.9825px 7.4564px rgba(0,0,0,0.1); */
+    box-shadow: h-offset v-offset blur spread color;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -55,6 +124,26 @@
     </style>
 </head>
 <body>
+    <div>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="LOGOS.png" alt="balancebudd.com">
+            </div>
+            <div>
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="#yogo-container">Yoga</a></li>
+                <li class="item"><a href="chatbudd/chatbudd.html">Chatbudd</a></li>
+                <li class="item"><a href="#journaling-section">Journaling</a></li>
+                <li class="item"><a href="game/game.html">Games</a></li>
+                <li class="item"><a href="appoint.html">Appointments</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+                <li class="item"><a href="login.html">Login</a></li>
+                <li class="item"><a href="signup.html">Sign-Up</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <h1>Doctor Appointment</h1>
         <form action="#" method="post">
