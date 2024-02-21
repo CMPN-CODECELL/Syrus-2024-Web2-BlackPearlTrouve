@@ -12,7 +12,8 @@ function saveMessage() {
 function displayMessage() {
   if ((messageInput.value = " ")) {
     alert("Input some message !!");
-  } else {
+  } 
+  else {
     const retrievedMessage = messageInput.value; 
     alert(retrievedMessage);
   }

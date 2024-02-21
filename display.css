@@ -6,15 +6,14 @@ body {
     color: #fff;
     height: 100%;
     width: 100%; */
-    color: #4caf50;
+    /* color: #4caf50; */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url("./assets/background-display.jpeg"); /* Replace 'background-image.jpg' with the path to your image */
+    background-image: url("journalbg.jpeg");
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     height: 100vh; /* Ensure the background covers the entire viewport height */
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -23,8 +22,10 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    // background-color: rgba(0, 128, 0, 0.8); /* Green theme */
+    /* background-color: rgba(0, 128, 0, 0.8); Green theme */
     border-radius: 10px;
+    /* border: solid; */
+    color:green
   }
   
   textarea {
@@ -32,14 +33,14 @@ body {
     height: 100px;
     margin-bottom: 10px;
     padding: 20px;
-    border: 1px solid #fff;
+    /* border: 1px solid #121010; */
     border-radius: 5px;
     background-color: transparent;
-    color: #fff;
+    color: #f8f2f2;
   }
   
   button {
-    background-color: #fff;
+    background-color: #7ef173;
     color: #000;
     border: none;
     padding: 10px 20px;
@@ -49,7 +50,7 @@ body {
   }
   
   button:hover {
-    background-color: #ddd;
+    background-color: #03aaa2;
   }
 
   html{
