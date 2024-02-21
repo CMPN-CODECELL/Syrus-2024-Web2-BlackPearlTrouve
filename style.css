@@ -124,14 +124,15 @@ footer{
 
 body{
     /* background-image: url("homebg.jpeg"); */
+    background-image: url("loginbg.jpeg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat ;
     background-size: cover;
     height: 100vh;
     color: #001D00;
     margin: auto;
     text-align: center;
-    background-color: #4caf50;
+    background-color: #87f28b;
 }
 
 .yoga-div{
