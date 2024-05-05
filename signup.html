@@ -27,7 +27,7 @@
       </form>
       <p class="green-text">Already have an account? <a href="./login.html">Login</a></p>
     </div>
-    <script src="script.js"></script>
+    
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
@@ -51,5 +51,8 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
